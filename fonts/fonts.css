@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Poppins;
+  src: 
+    local('Poppins'), 
+    local('poppins'), 
+    local('Poppins Regular'), 
+    local('Poppins-Regular'), 
+    local('PoppinsRegular'), 
+    local('poppins-regular'),
+    local('poppins regular'),
+    local('poppinsregular'),
+    url(Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: 
+    local('Poppins-Bold'), 
+    local('Poppins Bold'), 
+    local('PoppinsBold'), 
+    local('poppins bold'), 
+    local('poppins-bold'), 
+    local('poppins bold'), 
+    local('poppinsbold'),
+    url(Poppins-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: 
+    local('Poppins-SemiBold'), 
+    local('Poppins SemiBold'), 
+    local('PoppinsSxemiBold'), 
+    local('poppins SemiBold'), 
+    local('poppins-SemiBold'), 
+    local('poppins semibold'), 
+    local('poppins-semibold'), 
+    local('poppinSemiBold'),
+    local('poppinsemibold'),
+    url(Poppins-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: 
+  local('Poppins-Medium'), 
+  local('Poppins Medium'), 
+  local('PoppinsMedium'), 
+  local('poppins-medium'), 
+  local('poppins medium'), 
+  local('poppinsmedium'),
+    url(Poppins-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}

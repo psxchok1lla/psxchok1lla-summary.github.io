@@ -1,0 +1,21 @@
+{
+  "name": "summery",
+  "version": "1.0.0",
+  "description": "psxchok1lla-summary",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo Test",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint **/*.css",
+    "lintfix": "stylelint **/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.3.3",
+    "stylelint": "^16.8.1"
+  }
+}
