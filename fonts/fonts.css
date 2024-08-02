@@ -49,12 +49,12 @@
 @font-face {
   font-family: Poppins-Medium;
   src: 
-  local('Poppins-Medium'), 
-  local('Poppins Medium'), 
-  local('PoppinsMedium'), 
-  local('poppins-medium'), 
-  local('poppins medium'), 
-  local('poppinsmedium'),
+    local('Poppins-Medium'), 
+    local('Poppins Medium'), 
+    local('PoppinsMedium'), 
+    local('poppins-medium'), 
+    local('poppins medium'), 
+    local('poppinsmedium'),
     url(Poppins-Medium.ttf);
   font-weight: 500;
   font-style: normal;
