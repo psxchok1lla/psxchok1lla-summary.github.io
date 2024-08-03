@@ -6,7 +6,6 @@
   gap: 1.25rem;
   grid-template-columns: 16.75rem 16.6875rem;
   position: relative;
-  background-color: aquamarine;
 }
 
 .profile {
@@ -25,7 +24,6 @@
 }
 
 .profile__info {
-  
   padding: 0.75rem;
 }
 
@@ -62,7 +60,6 @@
   display: grid;
   grid-template-columns: 25.6875rem 7.75rem;
   gap: 1.25rem;
-  background-color: brown;
 }
 
 .experience {
@@ -76,8 +73,7 @@
   margin-top: 1rem;
 }
 
-
-.job__card {
+.job-card {
   padding: 0.5rem;
   border-radius: 0.75rem;
   background-color: #fff;
@@ -85,7 +81,7 @@
   min-height: 4.5rem;
 }
 
-.job__card__content {
+.job-card__content {
   display: grid;
   grid-template-columns: 7.75rem 14.9375rem;
   gap: 0.5rem;
@@ -93,20 +89,45 @@
 }
 
 .featured__points li {
-  list-style:disc;
+  list-style: disc;
 }
-
-/* .time__period {
-  padding-top: 2px;
-  vertical-align: middle;
-} */
-
 
 .tools-box {
   padding: 0.75rem 0.75rem 0.625rem;
 }
 
+.tools-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 0.75rem; 
+  margin-top: 1rem;
+  justify-content: center;
+}
 
+.tools-card {
+  position: relative;
+  display: flex;
+  padding: 0.5rem ;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  min-height: 3rem;
+  margin: 0 0.5rem;
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tools__title {
+  position: absolute;
+  min-width: 1.5rem;
+  block-size: 0.6875rem;
+  max-width: 5rem;
+  background-color: #000;
+  border-radius: 3.6875rem;
+  padding: 2px 6px;
+  top: -5px; 
+}
 
 /* content-middle styles end */
 
@@ -118,17 +139,37 @@
   display: grid;
   grid-template-columns: 16.75rem 16.6875rem;
   gap: 1.25rem;
-  background-color:chocolate;
 }
 
 .education {
   padding: 0.75rem 0.625rem 0.625rem;
 }
 
-.interests {
-  padding: 0.75rem;
+.education-list {
+  display: flex;
+  gap: 1rem;
 }
 
+.education-card {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  inline-size: 7.25rem;
+  min-height: 4.5rem;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags-list li{
+  margin-right: 2px;
+}
+
+.tags-list li:last-child {
+  margin-right: 0; 
+}
 
 .interests__contact-info {
   display: grid;
@@ -136,8 +177,33 @@
   gap: 1.25rem;
 }
 
+.interests {
+  padding: 0.75rem;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0.75rem 0.75rem;
+}
+
+.interests-card {
+  min-width: 2rem;
+  block-size: 1.4375rem;
+  padding: 0.25rem 0.625rem;
+  background-color: #fff;
+  border-radius: 2.5rem;
+}
+
+
 .contact {
   padding: 0.75rem;
+}
+
+.contact a {
+  color: #ddd;
+  text-decoration: none;
 }
 
 /* content-end styles end */

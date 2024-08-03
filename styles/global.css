@@ -28,6 +28,15 @@ h2 {
   font-style: normal;
 }
 
+h4 {
+  color: #fff;
+  font-family: Poppins-Medium, sans-serif;
+  font-size: 5px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 142%;
+}
+
 /* global css styles end*/
 
 /* wrappers styles start */
@@ -45,6 +54,20 @@ h2 {
   padding: 0.9375rem 1.25rem;
 }
 
+.tools__wrapper {
+  margin-top: 0.4rem;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.education__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
 /* wrappers styles end */
 
 
@@ -53,6 +76,12 @@ h2 {
 .container__grey {
   border-radius: 0.75rem;
   background-color: #f0f0f0;
+}
+
+.container__black {
+  border-radius: 0.75rem;
+  background-color: #000;
+  color: #fff;
 }
 
 .most__recent-card {
@@ -75,18 +104,14 @@ h2 {
   padding: 0.125rem 0.375rem;
 }
 
+/* .heart-badge {
+
+} */
+
 /* containers&cards styles end */
 
 
 /* list styles start */
-
-.icon-list {
-  display: flex;
-  gap: 0.625rem;
-  font-size: 14px;
-  line-height: 150%;
-  vertical-align: top;
-}
 
 .flex-column-space-between {
   display: flex;
