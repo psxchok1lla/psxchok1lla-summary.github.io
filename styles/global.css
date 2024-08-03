@@ -1,45 +1,110 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  block-size: 100%;
-  font-size: 16px;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-img {
-  width: 100%;  
-}
+/* global css styles start*/
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
 }
 
+.page {
+  box-sizing: border-box;
+  inline-size: 595px;
+  block-size: 842px;
+  margin: auto;
+  color: #000;
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 14px;
+  font-family: Poppins-Medium;
+  line-height: 150%;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* global css styles end*/
+
+/* wrappers styles start */
+
+.title__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__wrapper {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 7.75rem 22.4375rem 18.0625rem;
+  gap: 1.25rem;
+  padding: 0.9375rem 1.25rem;
+}
+
+/* wrappers styles end */
+
+
+/* containers&cards styles start */
+
+.container__grey {
+  border-radius: 0.75rem;
+  background-color: #f0f0f0;
+}
+
+.most__recent-card {
+  border-radius: 0.75rem;
+  background-color: #28d979;
+  color: #fff;
+  font-family: Poppins-Medium, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 8px;
+  line-height: 155%;
+}
+
+.most__recent-badge {
+  background-color: rgba(126 115 18 /0.4);
+  color: #ddf163;
+  border-radius: 0.6875rem;
+  inline-size: 3.8125rem;
+  block-size: 1rem;
+  padding: 0.125rem 0.375rem;
+}
+
+/* containers&cards styles end */
+
+
+/* list styles start */
+
+.icon-list {
+  display: flex;
+  gap: 0.625rem;
+  font-size: 14px;
+  line-height: 150%;
+  vertical-align: top;
+}
+
+.flex-column-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* list styles end */
+
+
+/* @ styles start */
+
+@media print {
+  
+  .page {
+    inline-size: 100%;  
+    box-shadow: none; 
+  }
+}
+
+/* @ styles start */

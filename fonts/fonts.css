@@ -15,6 +15,20 @@
 }
 
 @font-face {
+  font-family: Poppins-Medium;
+  src: 
+    local('Poppins-Medium'), 
+    local('Poppins Medium'), 
+    local('PoppinsMedium'), 
+    local('poppins-medium'), 
+    local('poppins medium'), 
+    local('poppinsmedium'),
+    url(Poppins-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: Poppins-Bold;
   src: 
     local('Poppins-Bold'), 
@@ -46,16 +60,3 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: Poppins-Medium;
-  src: 
-    local('Poppins-Medium'), 
-    local('Poppins Medium'), 
-    local('PoppinsMedium'), 
-    local('poppins-medium'), 
-    local('poppins medium'), 
-    local('poppinsmedium'),
-    url(Poppins-Medium.ttf);
-  font-weight: 500;
-  font-style: normal;
-}

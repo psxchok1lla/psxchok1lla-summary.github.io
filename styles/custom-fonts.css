@@ -1,0 +1,50 @@
+/* custom fonts styles start*/
+
+.Medium__12px {
+  font-family: Poppins-Medium, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.Medium__10px {
+  font-family: Poppins-Medium, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.Regular__10px {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.Medium__8px {
+  font-family: Poppins-Medium, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 8px;
+  line-height: 150%;
+}
+
+.Regular__8px {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8px;
+  line-height: 150%;
+}
+
+/* .Medium__5px {
+  color: #000;
+  font-family: Poppins-Medium, sans-serif;
+  font-size: 5px;
+  line-height: 104%;
+} */
+
+/* custom fonts styles end*/
