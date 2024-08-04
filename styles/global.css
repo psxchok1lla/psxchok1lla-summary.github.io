@@ -1,13 +1,13 @@
 /* global css styles start*/
 
 .visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
 
 .page {
@@ -19,6 +19,18 @@
   font-family: Poppins, sans-serif;
   background-color: #fff;
 }
+
+.content-list {
+  position: relative;
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* global css styles end*/
+
+/* headlines styles start */
 
 h2 {
   font-size: 14px;
@@ -37,7 +49,7 @@ h4 {
   line-height: 142%;
 }
 
-/* global css styles end*/
+/* headlines styles end */
 
 /* wrappers styles start */
 
@@ -62,16 +74,16 @@ h4 {
   gap: 10px;
 }
 
-.education__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-
 /* wrappers styles end */
 
-
 /* containers&cards styles start */
+
+.card__container {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+}
 
 .container__grey {
   border-radius: 0.75rem;
@@ -95,40 +107,15 @@ h4 {
   line-height: 155%;
 }
 
-.most__recent-badge {
-  background-color: rgba(126 115 18 /0.4);
-  color: #ddf163;
-  border-radius: 0.6875rem;
-  inline-size: 3.8125rem;
-  block-size: 1rem;
-  padding: 0.125rem 0.375rem;
-}
-
-/* .heart-badge {
-
-} */
-
 /* containers&cards styles end */
-
-
-/* list styles start */
-
-.flex-column-space-between {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* list styles end */
-
 
 /* @ styles start */
 
 @media print {
-  
+
   .page {
-    inline-size: 100%;  
-    box-shadow: none; 
+    inline-size: 100%;
+    box-shadow: none;
   }
 }
 
