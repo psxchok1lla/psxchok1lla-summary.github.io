@@ -100,11 +100,6 @@ h4 {
   border-radius: 0.75rem;
   background-color: #28d979;
   color: #fff;
-  font-family: Poppins-Medium, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 8px;
-  line-height: 155%;
 }
 
 /* containers&cards styles end */
@@ -112,11 +107,11 @@ h4 {
 /* @ styles start */
 
 @media print {
-
+  
   .page {
     inline-size: 100%;
     box-shadow: none;
   }
 }
 
-/* @ styles start */
+/* @ styles end */

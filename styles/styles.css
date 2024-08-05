@@ -27,6 +27,10 @@
   border-radius: 0.75rem;
 }
 
+.greeting__phrase {
+  padding-top: 4px;
+}
+
 .profile__info {
   display: flex;
   flex-direction: column;
@@ -54,13 +58,21 @@
 
 .languages-list {
   margin-top: 1rem;
-  inline-size: 15.1875rem;
-  block-size: 3.3125rem;
+  width: 15.1875rem; /* Fixed width */
+  height: auto; /* Allow height to adjust based on content */
 }
 
 .languages__skills {
   display: flex;
-  gap: 1.0675rem;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px dashed transparent;
+  gap: 0.5rem;
 }
 
 .name__languages {
@@ -69,15 +81,24 @@
   font-weight: 500;
   font-style: normal;
   font-size: 10px;
-  line-height: 104%;
+  line-height: 1.2;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.name__languages[contenteditable='true']:empty:before {
+  content: attr(data-placeholder);
+  color: #ccc;
 }
 
 .languages__level {
   position: relative;
-  inline-size: 5.25rem;
-  block-size: 0.6875rem;
+  width: 10.5rem;
+  height: 0.6875rem;
   border-radius: 3px;
-  background-color: #28d797;
+  border: 1px solid #32cd32;
+  background-color: transparent;
+  align-self: flex-start;
 }
 
 /* languages styles end */
@@ -115,6 +136,10 @@
   width: 100%;
 }
 
+.most__recent-card .time__period {
+  padding-top: 2px;
+}
+
 .most__recent-badge {
   background-color: rgba(126 115 18 /0.4);
   color: #ddf163;
@@ -123,6 +148,11 @@
   block-size: 1rem;
   padding: 0.125rem 0.375rem;
   box-shadow: 0 4px 4px rgba(0 0 0 / 0.25);
+  font-family: Poppins-Medium, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 8px;
+  line-height: 155%;
 }
 
 .experience-card__content {
@@ -282,6 +312,39 @@
   text-decoration: none;
 }
 /* contact styles end */
+
+/* download-button styles start */
+
+.button-container {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.download-button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
+}
+
+.download-button:hover {
+  background-color: #000;
+  -webkit-background-color: #000;
+  color: #fff;
+}
+
+/* download-button styles end */
 
 /*=========================================
 =       content-end styles end            =

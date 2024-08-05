@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/custom-fonts.css" />
     <link rel="stylesheet" href="./styles/elements_status.css" />
+    <link rel="stylesheet" href="./styles/script__styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body class="page">
     <h1 class="visually-hidden">summary</h1>
     <div class="content__wrapper">
+
+
       <section class="content-start">
+      
         <div class="profile">
           <img
             src="./images/camphoto_1804928587.JPG"
@@ -27,7 +34,7 @@
             <div class="title__wrapper">
               <div class="greeting__phrase Medium__10px">Hi 👋🏻 I’m</div>
               <div class="icon-list">
-                <a href="" class="edit__icon icon"
+                <a href="" id="edit-icon" class="edit__icon icon"
                   ><img src="./images/black__edit-icon.svg" alt=""
                 /></a>
               </div>
@@ -38,36 +45,37 @@
             </div>
           </div>
         </div>
+      
         <div class="languages container__grey">
           <div class="title__wrapper">
             <h2 class="title">Languages</h2>
-            <div class="icon-list">
-              <a href="" class="edit__icon icon"
-                ><img src="./images/black__add-icon.svg" alt=""
-              /></a>
-              <a href="" class="edit__icon icon"
-                ><img src="./images/black__edit-icon.svg" alt=""
-              /></a>
+            <div class="icon-list" id="icon-list">
+              <button id="add-icon" class="edit__icon icon">
+                <img src="./images/black__add-icon.svg" alt="Add" />
+              </button>
+              <button id="edit-icon" class="edit__icon icon" style="display: none;">
+                <img src="./images/black__edit-icon.svg" alt="Edit" />
+              </button>
             </div>
           </div>
-          <div class="languages-list content-list">
-            <ul class="languages__skills">
-              <li class="name__languages">English</li>
-              <li class="languages__level"></li>
-            </ul>
+          <div class="languages-list content-list" id="languages-list">
+            <!-- Language blocks will be added here dynamically -->
           </div>
         </div>
+      
       </section>
-
+      
+      
       <section class="content-middle">
+      
         <div class="experience container__grey">
           <div class="title__wrapper">
             <h2 class="title">Experience</h2>
             <div class="icon-list">
-              <a href="" class="edit__icon icon"
+              <a href="" id="add-icon" class="edit__icon icon"
                 ><img src="./images/black__add-icon.svg" alt=""
               /></a>
-              <a href="" class="edit__icon icon"
+              <a href="" id="add-icon" class="edit__icon icon"
                 ><img src="./images/black__edit-icon.svg" alt=""
               /></a>
             </div>
@@ -116,14 +124,15 @@
             </div>
           </div>
         </div>
+      
         <div class="tools-box container__grey">
           <div class="title__wrapper">
             <h2 class="title">Tools</h2>
             <div class="icon-list">
-              <a href="" class="edit__icon icon"
+              <a href="" id="add-icon" class="edit__icon icon"
                 ><img src="./images/black__add-icon.svg" alt=""
               /></a>
-              <a href="" class="edit__icon icon"
+              <a href="" id="edit-icon" class="edit__icon icon"
                 ><img src="./images/black__edit-icon.svg" alt=""
               /></a>
             </div>
@@ -163,17 +172,20 @@
             </div>
           </div>
         </div>
+      
       </section>
-
+      
+      
       <section class="content-end">
+      
         <div class="education container__grey">
           <div class="title__wrapper">
             <h2 class="title">Education</h2>
             <div class="icon-list">
-              <a href="" class="edit__icon icon"
+              <a href="" id="add-icon" class="edit__icon icon"
                 ><img src="./images/black__add-icon.svg" alt=""
               /></a>
-              <a href="" class="edit__icon icon"
+              <a href="" id="edit-icon" class="edit__icon icon"
                 ><img src="./images/black__edit-icon.svg" alt=""
               /></a>
             </div>
@@ -182,9 +194,7 @@
             <div class="education-card card__container most__recent-card">
               <div class="title__wrapper">
                 <div class="time__period Medium__10px">2017 - 2022</div>
-                <a href="" class="most__recent__heart-bage"
-                  ><img src="./images/heart.svg" alt=""
-                /></a>
+                <img src="./images/heart.svg" alt=""/></a>
               </div>
               <div class="education-card__content">
                 <div class="study__destination Medium__10px">Law</div>
@@ -218,15 +228,16 @@
             </div>
           </div>
         </div>
+      
         <div class="interests__contact-info">
           <div class="interests container__grey">
             <div class="title__wrapper">
               <h2 class="title">Interests</h2>
               <div class="icon-list">
-                <a href="" class="edit__icon icon"
+                <a href="" id="add-icon" class="edit__icon icon"
                   ><img src="./images/black__add-icon.svg" alt=""
                 /></a>
-                <a href="" class="edit__icon icon"
+                <a href=""id="edit-icon" class="edit__icon icon"
                   ><img src="./images/black__edit-icon.svg" alt=""
                 /></a>
               </div>
@@ -255,7 +266,14 @@
             >
           </div>
         </div>
+      
       </section>
+      
+      
+      </div>
+      <div class="button-container">
+        <button id="download-btn" class="download-button">Скачать</button>
+      </div>
     </div>
   </body>
 </html>
